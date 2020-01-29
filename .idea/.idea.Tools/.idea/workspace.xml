@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bd8a7cc-987c-4456-a2b5-a1760bfc5574" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Cleaner/DirectoryCleaner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Cleaner/CleanPackageBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tools.Tests/CleanPackageBuilderTests.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Cleaner/Class1.cs" />
+        <option value="$PROJECT_DIR$/Cleaner/CleanPackageBuilder.cs" />
+        <option value="$PROJECT_DIR$/Cleaner/DirectoryCleaner.cs" />
+        <option value="$PROJECT_DIR$/Tools.Tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/Tools.Tests/CleanPackageBuilderTests.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X2hCt0F1J3oX8WWcPMShKWpo4Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bd8a7cc-987c-4456-a2b5-a1760bfc5574" name="Default Changelist" comment="" />
+      <created>1580249974204</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580249974204</updated>
+      <workItem from="1580249979243" duration="7968000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="150" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="127" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="3" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="3" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="7" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="3" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="7" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="8" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="4" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="4" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="5" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="4" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="5" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="10" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="4" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="5" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="10" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="11" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state width="487" height="466" key="DebuggerActiveHint" timestamp="1580256625142">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="487" height="466" key="DebuggerActiveHint/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580256625142" />
+    <state width="1874" height="344" key="GridCell.Tab.0.bottom" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.0.center" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.0.center/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.0.left" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.0.left/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.0.right" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.0.right/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.1.bottom" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.1.center" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.1.center/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.1.left" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.1.left/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.1.right" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.1.right/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.2.bottom" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.2.bottom/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.2.center" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.2.center/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.2.left" timestamp="1580258350209">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.2.left/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350209" />
+    <state width="1874" height="344" key="GridCell.Tab.2.right" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.2.right/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.3.bottom" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.3.bottom/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.3.center" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.3.center/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.3.left" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.3.left/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.3.right" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.3.right/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.4.bottom" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.4.bottom/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.4.center" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.4.center/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.4.left" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.4.left/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state width="1874" height="344" key="GridCell.Tab.4.right" timestamp="1580258350210">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state width="1874" height="344" key="GridCell.Tab.4.right/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580258350210" />
+    <state x="555" y="262" width="804" height="527" key="Rider.ProjectTemplateDialog.Size" timestamp="1580252067403">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="555" y="262" width="804" height="527" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580252067403" />
+    <state x="713" y="228" width="487" height="594" key="RiderGenerateDialog" timestamp="1580250838849">
+      <screen x="0" y="0" width="1920" height="1052" />
+    </state>
+    <state x="713" y="228" width="487" height="594" key="RiderGenerateDialog/0.0.1920.1052/1920.0.1920.1080@0.0.1920.1052" timestamp="1580250838849" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Cleaner/DirectoryCleaner.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/Cleaner/DirectoryCleaner.cs" initialLine="32">
+            <startOffsets>
+              <option value="1282" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1313" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
