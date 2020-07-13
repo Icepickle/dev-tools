@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/converter.js",
-            "args": ["/home/brecht/dev/print-preview-request.json", "-n:PrintPreviewRequest", "-o", "/home/brecht/dev/PrintPreviewRequest.cs"]
+            "args": ["C:\\dev\\import.json", "-n:SalesContactData", "-t:ts"]
         }
     ]
 }

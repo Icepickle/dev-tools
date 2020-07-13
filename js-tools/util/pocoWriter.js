@@ -1,14 +1,19 @@
-const generateCodeFromStructure = ( { name, classes, properties, isDictionaryExtension }, generatedClasses = {} ) => {
+const generateCodeFromStructure = ( { name, classes, properties, isDictionaryExtension }, serializer = serializeClassAsCS, generatedClasses = {} ) => {
     const output = [];
     for (let classDefinition of classes ) {
         if (generatedClasses[classDefinition.name]) {
             continue;
         }
         generatedClasses[classDefinition.name] = true;
-        output.push( generateCodeFromStructure( classDefinition, generatedClasses ) );
+        output.push( generateCodeFromStructure( classDefinition, serializer, generatedClasses ) );
         output.push( '' );
     }
+    output.push( ...serializer({ name, properties, isDictionaryExtension }) );
+    return output.join('\n');
+}
 
+const serializeClassAsCS = ({ name, properties, isDictionaryExtension }) => {
+    const output = [];
     output.push( `  public sealed class ${name} {` );
     
     if (isDictionaryExtension) {
@@ -22,7 +27,32 @@ const generateCodeFromStructure = ( { name, classes, properties, isDictionaryExt
     }
 
     output.push( `  }` );
-    return output.join('\n');
+    return output;
 }
 
-exports.generateCodeFromStructure = generateCodeFromStructure;
+const serializeClassAsTS = ({ name, properties, isDictionaryExtension }) => {
+    const output = [];
+    output.push( `  export interface ${name} {` );
+    
+    if (isDictionaryExtension) {
+        output.push( `    [x: string]: any;` );
+    }
+
+    for (let propDefinition of properties ) {
+        output.push( `    ${propDefinition.propertyName}: ${propDefinition.type};` );
+    }
+
+    output.push( `  }` );
+    return output;
+}
+
+function serializerFactory( target = "cs" ) {
+    switch (target.toUpperCase()) {
+        case "TS":
+            return serializeClassAsTS;
+        default:
+            return serializeClassAsCS;
+    }
+}
+
+exports.generateCodeFromStructure = (structure, target = "CS") => generateCodeFromStructure( structure, serializerFactory( target ) );
