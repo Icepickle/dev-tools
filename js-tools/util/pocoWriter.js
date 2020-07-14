@@ -15,7 +15,7 @@ const generateCodeFromStructure = ( { name, classes, properties, isDictionaryExt
 }
 
 function serializerFactory( target = "cs" ) {
-    const serializer = generators['serializeClassAs' + target.toUpperCase()];
+    const serializer = generators.generators[target.toUpperCase()];
     if (!serializer) {
         throw `Target: ${target} wasn't found in generators`;
     }

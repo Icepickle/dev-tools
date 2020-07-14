@@ -55,5 +55,10 @@ const serializeClassAsTS = ({ name, properties, isDictionaryExtension }) => {
   return output;
 }
 
+exports.generators = {
+  'CS': serializeClassAsCS,
+  'TS': serializeClassAsTS
+};
+
 exports.serializeClassAsCS = serializeClassAsCS;
 exports.serializeClassAsTS = serializeClassAsTS;
