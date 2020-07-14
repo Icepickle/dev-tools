@@ -1,10 +1,10 @@
 # Converter
 
-Simple converter to create C# classes from a json file
+Simple converter to create classes from a json file
 
 ## Usage
 
-    node converter.js -i:input.json -o:output.cs -n:rootObject -ns:datamodels
+    node converter.js -i:input.json -o:output.cs -n:rootObject -ns:datamodels -t:cs
 
 ## Options
 
@@ -14,6 +14,11 @@ Simple converter to create C# classes from a json file
 |output|o|The file it should create, when not specified the output goes to the console|[O]|
 |namespace|ns|The namespace argument for the file to be created, when not specified only the classes are printed|[O]|
 |name|n|The name used for the rootObject, when not specified `RootObject` will be used|[O]|
+|target|t|The target for the output system (either cs or ts), defaults to CS|[O]|
+
+## Generators available
+
+Typescript generator & C# generator
 
 ## Quirks
 
@@ -36,4 +41,4 @@ The serializer knows following types: `int`, `string`, `decimal`, `decimal?`, `J
 - If multiple same named array properties exist, the first encountered will be used as the class to output, even if their properties may differ.
 - The program doesn't provide a helpfile, therefor it assumes one has access to this document.
 - The program will not try to match classes that have exactly the same properties.
-- No `int?` is available
+- Array of primitive types are not supported

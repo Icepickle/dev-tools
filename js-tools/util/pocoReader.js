@@ -1,7 +1,52 @@
 const { toTypeName, sanitizePropertyName, isString } = require('./util');
 
-function createProperty( name, propertyName, type = 'string') {
-    return { name: sanitizePropertyName( name ), type, propertyName: propertyName || name };
+const typeNames = Object.freeze({
+    'bool': '0',
+    'integer': '1',
+    'string': '2',
+    'decimal': '3',
+    'object': '4',
+    'custom': '99',
+    '0': 'bool',
+    '1': 'integer',
+    '2': 'string',
+    '3': 'decimal',
+    '4': 'object',
+    '99': 'custom'
+});
+
+class TypeDescription {
+    static getTypeName( stringType ) {
+        return typeNames[stringType.toLowerCase()] || typeNames.custom;
+    }
+    static bestMatch( originalType, newType ) {
+        let nullable = newType.nullable || originalType.nullable;
+        let isArray = newType.nullable || originalType.nullable;
+        if (originalType.type === newType.type) {
+            return new TypeDescription( originalType.customTypeName, isArray, nullable );
+        }
+        switch (originalType.type) {
+            case typeNames.string:
+            case typeNames.object:
+                return new TypeDescription( newType.customTypeName, isArray, true );
+            case typeNames.integer:
+            case typeNames.decimal:
+            case typeNames.boolean:
+                return new TypeDescription( originalType.type, isArray, true );
+            default:
+                return new TypeDescription( originalType.customTypeName, isArray, true );
+        }
+    }
+    constructor( type, isArray = false, nullable = false ) {
+        this.type = TypeDescription.getTypeName( type );
+        this.nullable = nullable;
+        this.isArray = isArray;
+        this.customTypeName = type;
+    }
+}
+
+function createProperty( name, propertyName, type = 'string', isArray = false, nullable = false ) {
+    return { name: sanitizePropertyName( name ), type: new TypeDescription( type, isArray, nullable ), propertyName: propertyName || name };
 }
 
 const readFromJson = ( jsonData, name ) => {
@@ -21,13 +66,13 @@ const readFromJson = ( jsonData, name ) => {
         const propertyValue = jsonData[property];
         if ( propertyValue === null ) {
             console.info( `${property} on ${name} is defined as null` );
-            classDefinition.properties.push( createProperty( property ) );
+            classDefinition.properties.push( createProperty( property, property, 'string', false, true ) );
             return classDefinition;
         }
         if ( Array.isArray( propertyValue ) ) {
             if ( propertyValue.length === 0 ) {
                 console.info( `${property} on ${name} is defined as an empty array` );
-                classDefinition.properties.push( createProperty( property, property, 'JArray' ) );
+                classDefinition.properties.push( createProperty( property, property, 'object', true, true ) );
                 return classDefinition;
             }
             const mergedDefinition = { classes: [], properties: [], name: toTypeName( property ) };
@@ -49,17 +94,7 @@ const readFromJson = ( jsonData, name ) => {
                     if (!propDict[existingProp.name]) {
                         continue;
                     }
-                    if ( existingProp.type === 'decimal' && propDict[existingProp.name].type === 'int' ) {
-                        // decimal wins
-                        propDict[existingProp.name].type = 'decimal';
-                    }
-                    if ( existingProp.type === 'decimal' && propDict[existingProp.name].type === 'string' ) {
-                        // becomes nullable decimal
-                        propDict[existingProp.name].type = 'decimal?';
-                    }
-                    if (existingProp.type !== 'string' && propDict[existingProp.name].type === 'string' ) {
-                        propDict[existingProp.name].type = existingProp.type;
-                    }
+                    propDict[existingProp.name].type = TypeDescription.bestMatch( existingProp.type, propDict[existingProp.name].type );
                     Object.assign( existingProp, propDict[existingProp.name] );
                     delete propDict[existingProp.name];
                 }
@@ -67,7 +102,7 @@ const readFromJson = ( jsonData, name ) => {
             }
             classDefinition.classes.push( mergedDefinition );
             console.info(`adding ${property} from ${name}` );
-            classDefinition.properties.push( createProperty( property, property, toTypeName( property ) + '[]' ) );
+            classDefinition.properties.push( createProperty( property, property, toTypeName( property ), true ) );
             return classDefinition;
         }
         if ( propertyValue === true || propertyValue === false ) {
@@ -95,3 +130,5 @@ const readFromJson = ( jsonData, name ) => {
 };
 
 exports.readFromJson = readFromJson;
+exports.TypeDescription = TypeDescription;
+exports.typeNames = typeNames;
