@@ -1,0 +1,19 @@
+  public sealed class SalesFunctions {
+    [JsonProperty( "function" )]
+    public string Function { get; set; }
+    [JsonProperty( "salesOrg" )]
+    public string SalesOrg { get; set; }
+    [JsonProperty( "salesOffice" )]
+    public string[] SalesOffice { get; set; }
+    [JsonProperty( "salesDistrict" )]
+    public string[] SalesDistrict { get; set; }
+    [JsonProperty( "substitute" )]
+    public bool? Substitute { get; set; }
+    [JsonProperty( "sortOrder" )]
+    public int SortOrder { get; set; }
+  }
+
+  public sealed class SalesFunctionDescription {
+    [JsonProperty( "salesFunctions" )]
+    public SalesFunctions[] SalesFunctions { get; set; }
+  }

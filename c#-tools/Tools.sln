@@ -1,12 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cleaner", "Cleaner\Cleaner.csproj", "{942C3A3F-10D2-4706-9C09-AD576CD319CB}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cleaner", "Cleaner\Cleaner.csproj", "{942C3A3F-10D2-4706-9C09-AD576CD319CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Tests", "Tools.Tests\Tools.Tests.csproj", "{225E4F4D-29F1-43A4-AEFB-003746374F42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools.Tests", "Tools.Tests\Tools.Tests.csproj", "{225E4F4D-29F1-43A4-AEFB-003746374F42}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{4E63F942-1524-4553-BB66-F55E981B8D13}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{38B72783-BB69-4F75-BD5C-A920061814CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageConsolidation", "PackageConsolidation\PackageConsolidation.csproj", "{4DF02ADE-6183-4E06-95A9-2FE40E7F4B75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,9 +27,20 @@ Global
 		{225E4F4D-29F1-43A4-AEFB-003746374F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{225E4F4D-29F1-43A4-AEFB-003746374F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{225E4F4D-29F1-43A4-AEFB-003746374F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF02ADE-6183-4E06-95A9-2FE40E7F4B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF02ADE-6183-4E06-95A9-2FE40E7F4B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF02ADE-6183-4E06-95A9-2FE40E7F4B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF02ADE-6183-4E06-95A9-2FE40E7F4B75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{942C3A3F-10D2-4706-9C09-AD576CD319CB} = {4E63F942-1524-4553-BB66-F55E981B8D13}
 		{225E4F4D-29F1-43A4-AEFB-003746374F42} = {38B72783-BB69-4F75-BD5C-A920061814CE}
+		{4DF02ADE-6183-4E06-95A9-2FE40E7F4B75} = {4E63F942-1524-4553-BB66-F55E981B8D13}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {054C2E88-467A-41D0-A59F-993F2A2E567D}
 	EndGlobalSection
 EndGlobal

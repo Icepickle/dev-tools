@@ -7,6 +7,7 @@ using NUnit.Framework;
 using NUnit.Framework.Internal;
 
 namespace Tools.Tests {
+  [TestFixture]
   public class CleanPackageBuilderTests {
     [Test]
     public void ThrowsInvalidOperationWhenMalConfigured() {
